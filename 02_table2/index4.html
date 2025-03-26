@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매출추이</title>
+    <style>
+        table{border: 1px solid #bababa; margin: auto; border-spacing: 0px; border-collapse: collapse;
+               width: 1100px; border-top: 3px solid #002a5d; border-left: none; border-right: none;}
+        th{border: 1px solid #bababa; height: 51px;}
+        td{border: 1px solid #bababa; text-align: center; height: 51px;}
+        .col1{width: 210px; background-color: #f9f9f9; border-left: none;}
+        .col11{background-color: #f1f1f1;}
+        .col111{background-color: #f1f1f1; width: 210px; border-left: none;}
+        td,th{width: 178px;}
+        .col2{border-right: none;}
+        caption{text-align: right;}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>단위:억 원</caption>
+        <tr class="col11">
+            <th class="col111">연도</th>
+            <th>합계</th>
+            <th>주택</th>
+            <th>토목</th>
+            <th>플랜트</th>
+            <th class="col2">연결조정 등</th>
+        </tr>
+        <tr>
+            <th rowspan="2" class="col1">2024</th>
+            <td>83,184</td>
+            <td>49,481</td>
+            <td>13,710</td>
+            <td>20,868</td>
+            <td class="col2">-875</td>
+        </tr>
+        <tr>
+            <td>100%</td>
+            <td>59.5%</td>
+            <td>16.5%</td>
+            <td>25.1%</td>
+            <td class="col2">-1.1%</td>
+        </tr>
+        <tr>
+            <th rowspan="2" class="col1">2023</th>
+            <td>79,911</td>
+            <td>52,569</td>
+            <td>13,650</td>
+            <td>16,194</td>
+            <td class="col2">-2,502</td>
+        </tr>
+        <tr>
+            <td>100%</td>
+            <td>65.8%</td>
+            <td>17.1%</td>
+            <td>20.3%</td>
+            <td class="col2">-3.1%</td>
+        </tr>
+        <tr>
+            <th rowspan="2" class="col1">2022</th>
+            <td>74,968</td>
+            <td>52,948</td>
+            <td>13,372</td>
+            <td>8,831</td>
+            <td class="col2">-183</td>
+        </tr>
+        <tr>
+            <td>100%</td>
+            <td>70.6%</td>
+            <td>17.8%</td>
+            <td>11.8%</td>
+            <td class="col2">-0.2%</td>
+        </tr>
+    </table>
+</body>
+</html>
