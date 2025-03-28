@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form과관련된태그요소들</title>
+    <style>
+        li{list-style: none; margin-bottom: 25px;}
+    </style>
+</head>
+<body>
+    <!-- action 값은 back엔드 개발자가 넣음 -->
+    <form action="">
+        <fieldset>
+            <legend>개인정보폼</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="gender" id="man" checked><label for="man"> 남</label>
+                    <input type="radio" name="gender" id="woman"><label for="woman"> 여</label>
+                </li>
+                <li>
+                    <label for="travel">여행</label><input type="checkbox" name="" id="travel">
+                    <label for="movie">영화</label><input type="checkbox" name="" id="movie" checked>
+                    <label for="book">독서</label><input type="checkbox" name="" id="book">
+                </li>
+                <li>
+                    <label for="color">칼라선택 :</label>
+                    <select name="" id="color">
+                        <!-- value 값은 백엔드 개발자가 넣음 -->
+                        <option value="">::::: 색상을 선택하세요 :::::</option>
+                        <option value="">빨강</option>
+                        <option value="">파랑</option>
+                        <option value="">초록</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="">컬러다중선택</label>
+                    <!-- multiple 넣으면 다중선택이 가능 -->
+                    <select name="" id="color" multiple>
+                        <option value="">::::: 색상을 선택하세요 :::::</option>
+                        <option value="">빨강</option>
+                        <option value="">파랑</option>
+                        <option value="">초록</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
