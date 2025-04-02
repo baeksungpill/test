@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품주문서</title>
+    <style>
+        fieldset{border: 1px solid #cba84c; width: 781px;}
+        legend{color: #cba84c;}
+        li{list-style: none; background: #eee; width: 736px; margin-bottom: 12px; padding-top: 10px;
+           padding-bottom: 10px; margin-left: -23px; padding-left: 12px;}
+        .in1{width: 177px; height: 23px;}
+        .in2{background: #000202; color: #ffffff;}
+    </style>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label> 
+                    <input type="text" name="" id="name" placeholder="여백없이 입력" required class="in1">
+                </li>
+                <li>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" name="" id="pw" placeholder="비밀번호를 입력하시오" required class="in1">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="adress">주소</label> 
+                    <input type="text" name="" id="adress" class="in1">
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <select name="" id="tel">
+                        <option value="">011</option>
+                        <option value="">010</option>
+                        <option value="">018</option>
+                    </select>
+                    <input type="text" name="" id="tel" class="in1" maxlength="4">
+                    <input type="text" name="" id="tel" class="in1" maxlength="4">
+                </li>
+                <li>
+                    <label for="memo">메모</label> 
+                    <textarea name="" id="memo" cols="40" rows="2" placeholder="여기에 메모를 입력하세요"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li>
+                    <label for="an">과태말라 안티구아 (100g)</label> 
+                    <input type="number" name="" id="an" min="1" max="10" class="in1">개
+                </li>
+                <li>
+                    <label for="indo">인도네시아 만델링 (100g)</label> 
+                    <input type="number" name="" id="indo" min="1" max="10" class="in1">개
+                </li>
+                <li>
+                    <label for="tam">탐라는도다 (블렌딩) (100g)</label> 
+                    <input type="number" name="" id="tam" min="1" max="10" class="in1">개
+                </li>
+                <li>
+                    <label for="aa">01</label> <input type="checkbox" name="" id="aa">
+                    <label for="bb">02</label> <input type="checkbox" name="" id="bb">
+                    <label for="cc">03</label> <input type="checkbox" name="" id="cc">
+                    <label for="dd">04</label> <input type="checkbox" name="" id="dd">
+                </li>
+                <li>
+                    <label for="raa">r01</label> <input type="radio" name="non" id="raa">
+                    <label for="rbb">r02</label> <input type="radio" name="non" id="rbb">
+                    <label for="rcc">r03</label> <input type="radio" name="non" id="rcc">
+                    <label for="rdd">r04</label> <input type="radio" name="non" id="rdd">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>버튼모음</legend>
+            <input type="submit" value="주문하기" class="in2"> <input type="reset" value="취소" class="in2">
+        </fieldset>
+    </form>
+</body>
+</html>
